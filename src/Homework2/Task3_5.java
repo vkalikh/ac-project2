@@ -27,19 +27,19 @@ public class Task3_5 {
         System.out.println();
 
         x = mas[0];
-        while (!sorted){
+        while (!sorted) {
             sorted = true;
-            for (i = 1; i < n; i++){
-                if (mas[i]<mas[i-1]){
-                    x = mas[i-1];
-                    mas[i-1] = mas[i];
+            for (i = 1; i < n; i++) {
+                if (mas[i] < mas[i - 1]) {
+                    x = mas[i - 1];
+                    mas[i - 1] = mas[i];
                     mas[i] = x;
                     sorted = false;
                 }
             }
         }
         for (i = 0; i < n; i++) {
-           System.out.print(mas[i] + ", ");
+            System.out.print(mas[i] + ", ");
         }
     }
 }

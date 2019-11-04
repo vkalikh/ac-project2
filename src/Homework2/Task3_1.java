@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Task3_1 {
     public static void main(String[] args) {
-        int n=0, i;
+        int n = 0, i;
         Scanner in = new Scanner(System.in);
         System.out.println("Enter a number's count:");
         n = in.nextInt();
@@ -18,8 +18,7 @@ public class Task3_1 {
         int[] mas = new int[n];
         Random rand = new Random();
 
-        for (i=0; i<n; i++)
-        {
+        for (i = 0; i < n; i++) {
             mas[i] = rand.nextInt(100);
             System.out.print(mas[i] + ", ");
         }

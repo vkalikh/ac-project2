@@ -13,9 +13,9 @@ public class Task1_3 {
             n = in.nextInt();
         }
 
-        switch (n){
+        switch (n) {
             case 1:
-                System.out.println("Monday" );
+                System.out.println("Monday");
                 break;
             case 2:
                 System.out.println("Tuesday");

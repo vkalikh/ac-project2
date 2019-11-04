@@ -14,19 +14,18 @@ public class Task3_2 {
             System.out.println("Invalid number. \n Enter one more time:");
             n = in.nextInt();
         }
-        x = n*2;
-        int[] mas = new int[x+1];
+        x = n * 2;
+        int[] mas = new int[x + 1];
 
-            for(j=n; j>0; j--, i++, x--){
-                mas[i] = j;
-                mas[x] = j;
-            }
-            mas[n] = 0;
+        for (j = n; j > 0; j--, i++, x--) {
+            mas[i] = j;
+            mas[x] = j;
+        }
+        mas[n] = 0;
 
-            for(i=0; i<=(n*2); i++)
-                System.out.print(mas[i] + ", ");
+        for (i = 0; i <= (n * 2); i++)
+            System.out.print(mas[i] + ", ");
     }
-
 
 
 }

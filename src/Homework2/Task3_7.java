@@ -23,7 +23,7 @@ public class Task3_7 {
         for (i = 0; i < n; i++) {
             len = rand.nextInt(8);
             mas[i] = new int[len];
-            for (j = 0; j < len; j++){
+            for (j = 0; j < len; j++) {
                 mas[i][j] = rand.nextInt(15);
                 System.out.print(mas[i][j] + ", ");
             }

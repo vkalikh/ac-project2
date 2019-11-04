@@ -22,7 +22,7 @@ public class Task3_6 {
         Random rand = new Random();
 
         for (i = 0; i < n; i++) {
-            for (j = 0; j < n; j++){
+            for (j = 0; j < n; j++) {
                 mas[i][j] = rand.nextInt(30);
                 System.out.print(mas[i][j] + ", ");
             }
@@ -30,8 +30,8 @@ public class Task3_6 {
         }
 
         for (i = 0; i < n; i++) {
-            for (j = 0; j < n; j++){
-                if (mas[i][j]%2 == 0)
+            for (j = 0; j < n; j++) {
+                if (mas[i][j] % 2 == 0)
                     System.out.print("0");
                 else
                     System.out.print("1");
@@ -40,5 +40,5 @@ public class Task3_6 {
         }
 
 
-}
+    }
 }

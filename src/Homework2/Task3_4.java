@@ -34,6 +34,6 @@ public class Task3_4 {
             else if (max < mas[i])
                 max = mas[i];
         }
-        System.out.println("Maximun = " + max + "\nMinimum = " + min + "\nAvarage = " + (float)sum / n);
+        System.out.println("Maximun = " + max + "\nMinimum = " + min + "\nAvarage = " + (float) sum / n);
     }
 }

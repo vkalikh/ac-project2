@@ -19,18 +19,16 @@ public class Task4 {
         checkForNatural(n, check);
     }
 
-    public static void checkForNatural (int n, int check){
-        if (n>1){
-            if (n%check != 0){
+    public static void checkForNatural(int n, int check) {
+        if (n > 1) {
+            if (n % check != 0) {
                 check++;
                 checkForNatural(n, check);
-            }
-            else if (n/check == 1){
-                System.out.println("Is number " + n + " simple - YES");}
-            else
+            } else if (n / check == 1) {
+                System.out.println("Is number " + n + " simple - YES");
+            } else
                 System.out.println("Is number " + n + " simple - NO");
-        }
-        else
+        } else
             System.out.println("Is number " + n + " simple - YES");
     }
 }

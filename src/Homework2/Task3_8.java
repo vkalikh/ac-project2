@@ -9,8 +9,8 @@ public class Task3_8 {
         int i, j;
         int[][] mas = new int[5][];
         for (i = 0; i < 5; i++) {
-            mas[i] = new int[i+1];
-            for (j = 0; j < i+1; j++){
+            mas[i] = new int[i + 1];
+            for (j = 0; j < i + 1; j++) {
                 System.out.print("*");
             }
             System.out.println();
