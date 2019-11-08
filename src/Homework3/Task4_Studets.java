@@ -1,9 +1,8 @@
 package Homework3;
 
-import Collection.Student;
-
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Task4_Studets {
     private String name;
@@ -16,6 +15,9 @@ public class Task4_Studets {
         this.surname = surname;
         this.dateOfBirthday = dateOfBirthday;
         this.course = course;
+    }
+
+    public Task4_Studets() {
     }
 
     public String getName() {
@@ -50,29 +52,44 @@ public class Task4_Studets {
         this.course = course;
     }
 
+
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
         List<Task4_Studets> students = new ArrayList<>();
-        int course = 2;
+        int course = 2, i;
 
-        Task4_Studets st1 = new Task4_Studets("Petr", "Ivanov", "01.01.1997", 2);
-        Task4_Studets st2 = new Task4_Studets("Ivan", "Petrov", "02.02.1998", 2);
-        Task4_Studets st3 = new Task4_Studets("Kate", "Petrova", "02.02.1999", 1);
-        Task4_Studets st4 = new Task4_Studets("Ira", "Fox", "02.02.1995", 4);
+        System.out.println("How many students do you want to enter:");
+        int num = in.nextInt();
+        Task4_Studets[] mas = new Task4_Studets[num];
 
-        students.add(st1);
-        students.add(st2);
-        students.add(st3);
-        students.add(st4);
+        for (i = 0; i < num; i++) {
+            mas[i] = new Task4_Studets();
+            System.out.println("Enter info for student (Name, Surname, Date of Birthday, Cource): ");
+            in.nextLine();
+            mas[i].setName(in.nextLine());
+            mas[i].setSurname(in.nextLine());
+            mas[i].setDateOfBirthday(in.nextLine());
+            mas[i].setCourse(in.nextInt());
+            students.add(mas[i]);
+        }
 
         Task4_Studets.printStudents(students, course);
     }
 
     public static void printStudents(List<Task4_Studets> students, int course) {
         for (Task4_Studets s : students) {
-            if (s.getCourse() == 2) {
-                System.out.println(s);
+            if (s.getCourse() == course) {
+                System.out.println(s.toString());
             }
         }
 
+    }
+
+    @Override
+    public String toString() {
+        return "Name: '" + name +
+                ", Surname: " + surname +
+                ", Date Of Birthday: " + dateOfBirthday +
+                ", Course: " + course;
     }
 }
