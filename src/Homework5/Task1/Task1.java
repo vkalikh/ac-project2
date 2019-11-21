@@ -1,28 +1,24 @@
 package Homework5.Task1;
 
 public class Task1 {
-    private static int a;
 
     public static void main(String[] args) {
-        a = 0;
+        Main obj = new Main();
         System.out.println("Start!");
-        timer();
+        timer(obj);
     }
 
-    private static void timer() {
+    private static void timer(Callback callback) {
         try {
             while (true) {
                 Thread.sleep(10 * 1000);
-                pritTime();
+                callback.call();
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
 
-    private static void pritTime() {
-        a = a + 10;
-        System.out.println("Last " + a);
-        timer();
-    }
+
 }
+//Не увидела в этой задаче реализации механизма обратного вызова.
