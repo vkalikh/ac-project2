@@ -1,6 +1,6 @@
 package Homework5.Task1;
 
-public class Main implements Callback {
+public class Handler implements Callback {
     private int a = 0;
 
     @Override
