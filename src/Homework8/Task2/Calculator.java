@@ -6,9 +6,9 @@ public class Calculator {
     public static void main(String[] args) {
         int a, b, operator;
         Scanner in = new Scanner(System.in);
-        Method op1 = (x,y) -> x+y;
-        Method op2 = (x,y) -> x-y;
-        Method op3 = (x,y) -> x*y;
+        Method op1 = (x, y) -> x + y;
+        Method op2 = (x, y) -> x - y;
+        Method op3 = (x, y) -> x * y;
 
         System.out.println("Enter the first number:");
         a = in.nextInt();
@@ -20,14 +20,15 @@ public class Calculator {
 
         switch (operator) {
             case 1:
-                System.out.println("Result: " + op1.operations(a,b));
+                System.out.println("Result: " + op1.operations(a, b));
                 break;
             case 2:
-                System.out.println("Result: " + op2.operations(a,b));
+                System.out.println("Result: " + op2.operations(a, b));
                 break;
             case 3:
-                System.out.println("Result: " + op3.operations(a,b));
+                System.out.println("Result: " + op3.operations(a, b));
                 break;
         }
     }
+
 }
