@@ -1,6 +1,7 @@
 package Homework6.Task2;
 
 public class GoodsList {
+
     private String goodsName;
     private float cost;
     private int count;
@@ -37,4 +38,5 @@ public class GoodsList {
     public void setCount(int count) {
         this.count = count;
     }
+
 }
